@@ -2,7 +2,6 @@
 # Save as: apps/streamlit_app/app.py
 
 import io
-import os
 from pathlib import Path
 from PIL import Image
 import streamlit as st
@@ -58,7 +57,6 @@ if not images:
 st.sidebar.header("Controls")
 sort_order = st.sidebar.radio("Sort images by", ["name", "size", "modified"], index=0)
 thumbs_per_row = st.sidebar.slider("Thumbnails per row", min_value=2, max_value=6, value=4)
-selected = st.sidebar.selectbox("Select image", [p.name for p in images])
 
 # sort images
 if sort_order == "size":
@@ -67,6 +65,8 @@ elif sort_order == "modified":
     images = sorted(images, key=lambda p: p.stat().st_mtime if p.exists() else 0, reverse=True)
 else:
     images = sorted(images, key=lambda p: p.name.lower())
+
+selected = st.sidebar.selectbox("Select image", [p.name for p in images])
 
 # Gallery
 st.subheader("Gallery")
@@ -79,10 +79,7 @@ for idx, img_path in enumerate(images):
             st.error(f"Could not load {img_path.name}")
             continue
         # show thumbnail (Streamlit will scale)
-        if isinstance(data, bytes):
-            st.image(data, caption=img_path.name, use_column_width=True)
-        else:
-            st.image(data, caption=img_path.name, use_column_width=True)
+        st.image(data, caption=img_path.name, use_column_width=True)
 
 # Show selected image full-size and metadata
 st.markdown("---")
