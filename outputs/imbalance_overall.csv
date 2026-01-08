@@ -1,0 +1,4 @@
+model,overall_accuracy,minority,fraction
+bert-base-multilingual-cased,0.75,hi,0.3
+xlm-roberta-base,0.25,hi,0.3
+google/muril-base-cased,0.5,hi,0.3

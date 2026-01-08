@@ -1,0 +1,10 @@
+model,lang,avg_tokens,unk_rate
+bert-base-multilingual-cased,bn,13.363636363636363,0.0
+bert-base-multilingual-cased,hi,10.636363636363637,0.0
+bert-base-multilingual-cased,ta,14.272727272727273,0.0
+xlm-roberta-base,bn,7.818181818181818,0.0
+xlm-roberta-base,hi,6.818181818181818,0.0
+xlm-roberta-base,ta,8.636363636363637,0.0
+google/muril-base-cased,bn,5.454545454545454,0.0
+google/muril-base-cased,hi,6.454545454545454,0.0
+google/muril-base-cased,ta,6.181818181818182,0.0

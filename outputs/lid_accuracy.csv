@@ -1,0 +1,13 @@
+model,lang,accuracy
+bert-base-multilingual-cased,overall,0.8
+bert-base-multilingual-cased,bn,1.0
+bert-base-multilingual-cased,hi,0.6666666666666666
+bert-base-multilingual-cased,ta,0.75
+xlm-roberta-base,overall,0.7
+xlm-roberta-base,bn,1.0
+xlm-roberta-base,hi,0.3333333333333333
+xlm-roberta-base,ta,0.75
+google/muril-base-cased,overall,0.5
+google/muril-base-cased,bn,0.6666666666666666
+google/muril-base-cased,hi,1.0
+google/muril-base-cased,ta,0.0

@@ -1,0 +1,187 @@
+{
+  "tokenization": [
+    {
+      "model": "bert-base-multilingual-cased",
+      "lang": "bn",
+      "avg_tokens": 13.363636363636363,
+      "unk_rate": 0.0
+    },
+    {
+      "model": "bert-base-multilingual-cased",
+      "lang": "hi",
+      "avg_tokens": 10.636363636363637,
+      "unk_rate": 0.0
+    },
+    {
+      "model": "bert-base-multilingual-cased",
+      "lang": "ta",
+      "avg_tokens": 14.272727272727273,
+      "unk_rate": 0.0
+    },
+    {
+      "model": "xlm-roberta-base",
+      "lang": "bn",
+      "avg_tokens": 7.818181818181818,
+      "unk_rate": 0.0
+    },
+    {
+      "model": "xlm-roberta-base",
+      "lang": "hi",
+      "avg_tokens": 6.818181818181818,
+      "unk_rate": 0.0
+    },
+    {
+      "model": "xlm-roberta-base",
+      "lang": "ta",
+      "avg_tokens": 8.636363636363637,
+      "unk_rate": 0.0
+    },
+    {
+      "model": "google/muril-base-cased",
+      "lang": "bn",
+      "avg_tokens": 5.454545454545454,
+      "unk_rate": 0.0
+    },
+    {
+      "model": "google/muril-base-cased",
+      "lang": "hi",
+      "avg_tokens": 6.454545454545454,
+      "unk_rate": 0.0
+    },
+    {
+      "model": "google/muril-base-cased",
+      "lang": "ta",
+      "avg_tokens": 6.181818181818182,
+      "unk_rate": 0.0
+    }
+  ],
+  "lid": [
+    {
+      "model": "bert-base-multilingual-cased",
+      "lang": "overall",
+      "accuracy": 0.8
+    },
+    {
+      "model": "bert-base-multilingual-cased",
+      "lang": "bn",
+      "accuracy": 1.0
+    },
+    {
+      "model": "bert-base-multilingual-cased",
+      "lang": "hi",
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "model": "bert-base-multilingual-cased",
+      "lang": "ta",
+      "accuracy": 0.75
+    },
+    {
+      "model": "xlm-roberta-base",
+      "lang": "overall",
+      "accuracy": 0.7
+    },
+    {
+      "model": "xlm-roberta-base",
+      "lang": "bn",
+      "accuracy": 1.0
+    },
+    {
+      "model": "xlm-roberta-base",
+      "lang": "hi",
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "model": "xlm-roberta-base",
+      "lang": "ta",
+      "accuracy": 0.75
+    },
+    {
+      "model": "google/muril-base-cased",
+      "lang": "overall",
+      "accuracy": 0.5
+    },
+    {
+      "model": "google/muril-base-cased",
+      "lang": "bn",
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "model": "google/muril-base-cased",
+      "lang": "hi",
+      "accuracy": 1.0
+    },
+    {
+      "model": "google/muril-base-cased",
+      "lang": "ta",
+      "accuracy": 0.0
+    }
+  ],
+  "news": [
+    {
+      "model": "bert-base-multilingual-cased",
+      "lang": "overall",
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "model": "bert-base-multilingual-cased",
+      "lang": "bn",
+      "accuracy": 0.0
+    },
+    {
+      "model": "bert-base-multilingual-cased",
+      "lang": "ta",
+      "accuracy": 0.5
+    },
+    {
+      "model": "xlm-roberta-base",
+      "lang": "overall",
+      "accuracy": 0.5
+    },
+    {
+      "model": "xlm-roberta-base",
+      "lang": "bn",
+      "accuracy": 0.5
+    },
+    {
+      "model": "xlm-roberta-base",
+      "lang": "ta",
+      "accuracy": 0.5
+    },
+    {
+      "model": "google/muril-base-cased",
+      "lang": "overall",
+      "accuracy": 0.5
+    },
+    {
+      "model": "google/muril-base-cased",
+      "lang": "bn",
+      "accuracy": 0.5
+    },
+    {
+      "model": "google/muril-base-cased",
+      "lang": "ta",
+      "accuracy": 0.5
+    }
+  ],
+  "imbalance": [
+    {
+      "model": "bert-base-multilingual-cased",
+      "overall_accuracy": 0.75,
+      "minority": "hi",
+      "fraction": 0.3
+    },
+    {
+      "model": "xlm-roberta-base",
+      "overall_accuracy": 0.25,
+      "minority": "hi",
+      "fraction": 0.3
+    },
+    {
+      "model": "google/muril-base-cased",
+      "overall_accuracy": 0.5,
+      "minority": "hi",
+      "fraction": 0.3
+    }
+  ]
+}
