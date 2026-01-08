@@ -1,3 +1,5 @@
+Note: This repository contains resources and datasets for Indian languages (not a runnable application).
+
 # multi-lingual-india
 
 A collection of datasets, tools, and examples to support multilingual NLP, transliteration, and localization for Indian languages. Designed to help developers build inclusive language technology across India’s diverse linguistic landscape.
