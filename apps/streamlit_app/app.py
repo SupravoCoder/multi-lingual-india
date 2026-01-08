@@ -2,7 +2,6 @@ import os
 import streamlit as st
 from pathlib import Path
 from PIL import Image
-import io
 
 # Detect repository root relative to this file
 SCRIPT_DIR = Path(__file__).parent.resolve()
@@ -120,7 +119,7 @@ def main():
     )
     
     # Find the selected image file
-    selected_image = next(img for img in sorted_images if img.name == selected_image_name)
+    selected_image = next((img for img in sorted_images if img.name == selected_image_name), sorted_images[0])
     
     st.sidebar.markdown("---")
     st.sidebar.info(f"**Total Images:** {len(image_files)}")
@@ -143,7 +142,7 @@ def main():
     # If there's a selection in session state, use it
     if 'selected_image' in st.session_state:
         selected_image_name = st.session_state['selected_image']
-        selected_image = next(img for img in sorted_images if img.name == selected_image_name)
+        selected_image = next((img for img in sorted_images if img.name == selected_image_name), sorted_images[0])
     
     st.markdown("---")
     st.header("🔍 Selected Image Details")
@@ -173,12 +172,13 @@ def main():
             # Download button
             st.markdown("---")
             with open(selected_image, "rb") as file:
-                btn = st.download_button(
-                    label="📥 Download Image",
-                    data=file,
-                    file_name=selected_image.name,
-                    mime=f"image/{selected_image.suffix[1:]}"
-                )
+                file_data = file.read()
+            btn = st.download_button(
+                label="📥 Download Image",
+                data=file_data,
+                file_name=selected_image.name,
+                mime=f"image/{selected_image.suffix[1:]}"
+            )
 
 
 if __name__ == "__main__":
